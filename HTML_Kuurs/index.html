@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Mikołaj Radka Porftofilo" content="Strona główna Porftofilo">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="skrypt" href="skrypt.js">
+    <script src="script.js"></script>
+    <title>Mikołaj Radka Porftofilo</title>
+</head>
+
+<body>
+    <h1>[mikoWHY]</h1>
+    <h2>Mikołaj Radka Porftofilo</h2>
+
+    <h3>  
+        <p1>Home</p1> <p2><a href="about.html">About</a></p2>
+        <p3><a href="contact.html">Contact</a></p3>
+
+    </h3>
+
+   <table>
+        <tr>
+            <td><a href="prace.html"><img src="http://placekitten.com/200/300"></a></td>
+            <td><img src="http://placekitten.com/200/300"></td>
+            <td><img src="http://placekitten.com/200/300"></td>
+            <td><img src="http://placekitten.com/200/300"></td>
+        </tr>  
+        <tr>
+            <td><img src="http://placekitten.com/200/300"></td>
+            <td><img src="http://placekitten.com/200/300"></td>
+            <td><img src="http://placekitten.com/200/300"></td>
+            <td><img src="http://placekitten.com/200/300"></td>
+        </tr>  
+        <tr>                                                
+            <td><img src="http://placekitten.com/200/300"></td>
+            <td><img src="http://placekitten.com/200/300"></td>
+            <td><img src="http://placekitten.com/200/300"></td>
+            <td><img src="http://placekitten.com/200/300"></td>
+        </tr>  
+        <tr>
+            <td><img src="http://placekitten.com/200/300"></td>
+            <td><img src="http://placekitten.com/200/300"></td>
+            <td><img src="http://placekitten.com/200/300"></td>
+            <td><img src="http://placekitten.com/200/300"></td>
+        </tr>  
+        <tr>
+          
+            <td><img src="http://placekitten.com/200/300"></td>
+            <td><img src="http://placekitten.com/200/300"></td>
+            <td><img src="http://placekitten.com/200/300"></td>
+            <td><img src="http://placekitten.com/200/300"></td>
+        </tr>  
+    </table>
+
+    <style>
+        td {
+          vertical-align: top;
+        }
+      </style>
+
+    <footer>
+        <p4>© Wszelkie prawa zastrzeżone</p4>
+        <p5 id="back-to-top">Back to top</p5>
+    </footer>
+
+    
+    
+    <script>
+        window.onload = function() {
+            var backToTopButton = document.getElementById('back-to-top');
+
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 100) {
+                    backToTopButton.style.display = 'block';
+                    backToTopButton.style.opacity = '1';
+                } else {
+                    backToTopButton.style.opacity = '0';
+                    setTimeout(function() {
+                        backToTopButton.style.display = 'none';
+                    }, 300);
+                }
+            });
+
+            backToTopButton.addEventListener('click', function() {
+                scrollToTop();
+            });
+
+            function scrollToTop() {
+                if (window.scrollY !== 0) {
+                    window.requestAnimationFrame(scrollToTop);
+                    window.scrollTo(0, window.scrollY - window.scrollY / 8);
+                }
+            }
+        };
+    </script>
+    
+
+</body>
+
+</html>
