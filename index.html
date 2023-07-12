@@ -3,99 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="Mikołaj Radka Porftofilo" content="Strona główna Porftofilo">
-    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="styl—About.css">
     <link rel="skrypt" href="skrypt.js">
     <script src="script.js"></script>
-    <title>Mikołaj Radka Porftofilo</title>
+    <title>Prace</title>
 </head>
 
 <body>
+
     <h1>[mikoWHY]</h1>
     <h2>Mikołaj Radka Porftofilo</h2>
 
-        <h3>  
+    <h3>  
         <p1><a href="index.html">Home</a></p1> <p2><a href="about.html">About</a></p2>
         <p3><a href="contact.html">Contact</a></p3>
 
     </h3>
+        <table>
+            <td><img src="http://placekitten.com/500/200">
+                <img src="http://placekitten.com/500/200">
+                <img src="http://placekitten.com/500/200">
+            </td>
+            <td id="tb2">
+            <p id="Nazwa">Nazwa</p>   
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Sed id assumenda iste autem adipisci in quaerat impedit itaque illum facilis consequuntur, 
+                saepe possimus velit eos cum perferendis dolores. Sapiente, exercitationem!Sed id assumenda iste autem adipisci in quaerat impedit itaque illum facilis consequuntur, 
+                saepe possimus velit eos cum perferendis dolores. Sapiente, exercitationemSed id assumenda iste autem adipisci in quaerat impedit itaque illum facilis consequuntur, 
+                saepe possimus velit eos cum perferendis dolores. Sapiente, exercitationemSed id assumenda iste autem adipisci in quaerat impedit itaque illum facilis consequuntur, 
+            </p>  
+        </td>
+        </table>
 
-   <table>
-        <tr>
-            <td><a href="prace.html"><img src="http://placekitten.com/200/300"></a></td>
-            <td><img src="http://placekitten.com/200/300"></td>
-            <td><img src="http://placekitten.com/200/300"></td>
-            <td><img src="http://placekitten.com/200/300"></td>
-        </tr>  
-        <tr>
-            <td><img src="http://placekitten.com/200/300"></td>
-            <td><img src="http://placekitten.com/200/300"></td>
-            <td><img src="http://placekitten.com/200/300"></td>
-            <td><img src="http://placekitten.com/200/300"></td>
-        </tr>  
-        <tr>                                                
-            <td><img src="http://placekitten.com/200/300"></td>
-            <td><img src="http://placekitten.com/200/300"></td>
-            <td><img src="http://placekitten.com/200/300"></td>
-            <td><img src="http://placekitten.com/200/300"></td>
-        </tr>  
-        <tr>
-            <td><img src="http://placekitten.com/200/300"></td>
-            <td><img src="http://placekitten.com/200/300"></td>
-            <td><img src="http://placekitten.com/200/300"></td>
-            <td><img src="http://placekitten.com/200/300"></td>
-        </tr>  
-        <tr>
-          
-            <td><img src="http://placekitten.com/200/300"></td>
-            <td><img src="http://placekitten.com/200/300"></td>
-            <td><img src="http://placekitten.com/200/300"></td>
-            <td><img src="http://placekitten.com/200/300"></td>
-        </tr>  
-    </table>
+        <script>
+            window.onload = function() {
+                var backToTopButton = document.getElementById('back-to-top');
+    
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 100) {
+                        backToTopButton.style.display = 'block';
+                        backToTopButton.style.opacity = '1';
+                    } else {
+                        backToTopButton.style.opacity = '0';
+                        setTimeout(function() {
+                            backToTopButton.style.display = 'none';
+                        }, 300);
+                    }
+                });
+    
+                backToTopButton.addEventListener('click', function() {
+                    scrollToTop();
+                });
+    
+                function scrollToTop() {
+                    if (window.scrollY !== 0) {
+                        window.requestAnimationFrame(scrollToTop);
+                        window.scrollTo(0, window.scrollY - window.scrollY / 8);
+                    }
+                }
+            };
+        </script>
 
-    <style>
-        td {
-          vertical-align: top;
-        }
-      </style>
+        <style>
+            td {
+              vertical-align: top;
+            }
+          </style>
 
     <footer>
         <p4>© Wszelkie prawa zastrzeżone</p4>
         <p5 id="back-to-top">Back to top</p5>
     </footer>
-
-    
-    
-    <script>
-        window.onload = function() {
-            var backToTopButton = document.getElementById('back-to-top');
-
-            window.addEventListener('scroll', function() {
-                if (window.pageYOffset > 100) {
-                    backToTopButton.style.display = 'block';
-                    backToTopButton.style.opacity = '1';
-                } else {
-                    backToTopButton.style.opacity = '0';
-                    setTimeout(function() {
-                        backToTopButton.style.display = 'none';
-                    }, 300);
-                }
-            });
-
-            backToTopButton.addEventListener('click', function() {
-                scrollToTop();
-            });
-
-            function scrollToTop() {
-                if (window.scrollY !== 0) {
-                    window.requestAnimationFrame(scrollToTop);
-                    window.scrollTo(0, window.scrollY - window.scrollY / 8);
-                }
-            }
-        };
-    </script>
-    
-
 </body>
-
-</html>
