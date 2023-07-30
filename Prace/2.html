@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Mikołaj Radka Porftofilo" content="Strona główna Porftofilo">
+    <link rel="stylesheet" href="styl-Prace.css">
+    <link rel="skrypt" href="skrypt.js">
+    <script src="script.js"></script>
+    <title>Herbapol/InnI</title>
+</head>
+
+<body>
+
+    <h1>[mikoWHY]</h1>
+    <h2>Mikołaj Radka Porftofilo</h2>
+
+    <h3>  
+        <p1><a href="../index.html">Home</a></p1> <p2><a href="../About.html">About</a></p2>
+        <p3><a href="../Contact.html">Contact</a></p3>
+
+    </h3>
+    <table>
+        <tr>
+          <td>
+            <video controls>
+              <source src="Grafiki/2/InnI_VID1.mp4" type="video/mp4">
+            </video>
+          </td>
+          <td id="tb2">
+            <p id="Nazwa">Herbapol/InnI</p>   
+            <p>
+                Podczas mojego stażu w agencji reklamowej "Inni" miałem okazję uczestniczyć w tworzeniu spotu reklamowego, gdzie moim zadaniem było wykonanie animacji poklatkowej. Bycie częścią tego kreatywnego procesu pozwoliło mi zdobyć praktyczne doświadczenie w dziedzinie grafiki komputerowej i poznać różnorodne techniki wizualne wykorzystywane w reklamie. Współpraca z doświadczonymi profesjonalistami w agencji była inspirująca i motywująca, a to doświadczenie będzie kluczowym punktem na mojej drodze rozwoju w tej dynamicznej dziedzinie., 
+            </p>  
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <video controls>
+              <source src="Grafiki/2/InnI_VID2.mp4" type="video/mp4">
+            </video>
+          </td>
+          <td>
+            <!-- Treść drugiej komórki (jeśli potrzebujesz) -->
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <video controls>
+              <source src="Grafiki/2/InnI_VID3.mp4" type="video/mp4">
+            </video>
+          </td>
+          <td>
+            <!-- Treść trzeciej komórki (jeśli potrzebujesz) -->
+          </td>
+        </tr>
+      </table>
+      
+
+        <script>
+            window.onload = function() {
+                var backToTopButton = document.getElementById('back-to-top');
+    
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 100) {
+                        backToTopButton.style.display = 'block';
+                        backToTopButton.style.opacity = '1';
+                    } else {
+                        backToTopButton.style.opacity = '0';
+                        setTimeout(function() {
+                            backToTopButton.style.display = 'none';
+                        }, 300);
+                    }
+                });
+    
+                backToTopButton.addEventListener('click', function() {
+                    scrollToTop();
+                });
+    
+                function scrollToTop() {
+                    if (window.scrollY !== 0) {
+                        window.requestAnimationFrame(scrollToTop);
+                        window.scrollTo(0, window.scrollY - window.scrollY / 8);
+                    }
+                }
+            };
+        </script>
+
+        <style>
+            td {
+              vertical-align: top;
+            }
+          </style>
+
+    <footer>
+        <p4>© Wszelkie prawa zastrzeżone</p4>
+        <p5 id="back-to-top">Back to top</p5>
+    </footer>
+</body>

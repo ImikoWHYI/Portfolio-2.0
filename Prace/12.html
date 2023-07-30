@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Mikołaj Radka Porftofilo" content="Strona główna Porftofilo">
+    <link rel="stylesheet" href="styl-Prace.css">
+    <link rel="skrypt" href="skrypt.js">
+    <script src="script.js"></script>
+    <title>Prace12</title>
+</head>
+
+<body>
+
+    <h1>[mikoWHY]</h1>
+    <h2>Mikołaj Radka Porftofilo</h2>
+
+    <h3>  
+        <p1><a href="../index.html">Home</a></p1> <p2><a href="../About.html">About</a></p2>
+        <p3><a href="../Contact.html">Contact</a></p3>
+
+    </h3>
+        <table>
+            <td id="img12"><img src="Grafiki/12/59-center.png">
+         
+            <td id="tb8">
+            <p id="Nazwa">Afrokwiaty</p>   
+            <p id="tekst12">
+                Przekształcenie zwykłego zdjęcia portretowego za pomocą techniki fotomanipulacji na głowie modelki. Jej włosny zostały podmienione na kwiat świetnie komponujhący się z makijażem. 
+            </p>  
+        </td>
+        </table>
+
+        <script>
+            window.onload = function() {
+                var backToTopButton = document.getElementById('back-to-top');
+    
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 100) {
+                        backToTopButton.style.display = 'block';
+                        backToTopButton.style.opacity = '1';
+                    } else {
+                        backToTopButton.style.opacity = '0';
+                        setTimeout(function() {
+                            backToTopButton.style.display = 'none';
+                        }, 300);
+                    }
+                });
+    
+                backToTopButton.addEventListener('click', function() {
+                    scrollToTop();
+                });
+    
+                function scrollToTop() {
+                    if (window.scrollY !== 0) {
+                        window.requestAnimationFrame(scrollToTop);
+                        window.scrollTo(0, window.scrollY - window.scrollY / 8);
+                    }
+                }
+            };
+        </script>
+
+        <style>
+            td {
+              vertical-align: top;
+            }
+          </style>
+
+    <footer>
+        <p4>© Wszelkie prawa zastrzeżone</p4>
+        <p5 id="back-to-top">Back to top</p5>
+    </footer>
+</body>

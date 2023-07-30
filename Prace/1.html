@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Mikołaj Radka Porftofilo" content="Strona główna Porftofilo">
+    <link rel="stylesheet" href="styl-Prace.css">
+    <link rel="skrypt" href="skrypt.js">
+    <script src="script.js"></script>
+    <title>Magdalena Radka Yoga</title>
+</head>
+
+<body>
+
+    <h1>[mikoWHY]</h1>
+    <h2>Mikołaj Radka Porftofilo</h2>
+
+    <h3>  
+        <p1><a href="../index.html">Home</a></p1> <p2><a href="../About.html">About</a></p2>
+        <p3><a href="../Contact.html">Contact</a></p3>
+
+    </h3>
+        <table>
+            <td>
+                <img src="Grafiki/1/Ksiega_znaku_szablon_older_V1_page-0004.jpg">
+                <img src="Grafiki/1/Ksiega_znaku_szablon_older_V1_page-0005.jpg">
+                <img src="Grafiki/1/Ksiega_znaku_szablon_older_V1_page-0006.jpg">
+                <img src="Grafiki/1/Ksiega_znaku_szablon_older_V1_page-0007.jpg">
+                <img src="Grafiki/1/Ksiega_znaku_szablon_older_V1_page-0008.jpg">
+                <img src="Grafiki/1/Ksiega_znaku_szablon_older_V1_page-0009.jpg">
+                <img src="Grafiki/1/Ksiega_znaku_szablon_older_V1_page-0010.jpg">
+                <img src="Grafiki/1/Ksiega_znaku_szablon_older_V1_page-0011.jpg">
+                <img src="Grafiki/1/Ksiega_znaku_szablon_older_V1_page-0012.jpg">
+                <img src="Grafiki/1/Ksiega_znaku_szablon_older_V1_page-0013.jpg">
+                <img src="Grafiki/1/Ksiega_znaku_szablon_older_V1_page-0014.jpg">
+            </td>
+            <td id="tb2">
+            <p id="Nazwa">Magdalena Radka Yoga</p>   
+            <p id="tekst">
+                Była to część edukacji w szkole SOWA EDU, gdzie projektowałem logo i identyfikację brandu dla szkoły jogi mojej mamy. 
+                Tworzenie logo odzwierciedlało esencję jogi - harmonię, spokój i równowagę. Byłem zainspirowany promowaniem tego pięknego miejsca, 
+                wspierając mamę w jej pasji i misji dzielenia się jogą z innymi. Widząc efekty końcowe, czułem dumę i wiarę, że szkoła jogi przyciągnie więcej uczniów, 
+                pomagając im odnaleźć wewnętrzną harmonię. Początek dnia malował się obiecująco, 
+                a ja byłam gotowy podjąć każde wyzwanie, jakie przyniesie.
+            </p>  
+        </td>
+        </table>
+
+        <script>
+            window.onload = function() {
+                var backToTopButton = document.getElementById('back-to-top');
+    
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 100) {
+                        backToTopButton.style.display = 'block';
+                        backToTopButton.style.opacity = '1';
+                    } else {
+                        backToTopButton.style.opacity = '0';
+                        setTimeout(function() {
+                            backToTopButton.style.display = 'none';
+                        }, 300);
+                    }
+                });
+    
+                backToTopButton.addEventListener('click', function() {
+                    scrollToTop();
+                });
+    
+                function scrollToTop() {
+                    if (window.scrollY !== 0) {
+                        window.requestAnimationFrame(scrollToTop);
+                        window.scrollTo(0, window.scrollY - window.scrollY / 8);
+                    }
+                }
+            };
+        </script>
+
+        <style>
+            td {
+              vertical-align: top;
+            }
+          </style>
+
+    <footer>
+        <p4>© Wszelkie prawa zastrzeżone</p4>
+        <p5 id="back-to-top">Back to top</p5>
+    </footer>
+</body>

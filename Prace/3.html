@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Mikołaj Radka Porftofilo" content="Strona główna Porftofilo">
+    <link rel="stylesheet" href="styl-Prace.css">
+    <link rel="skrypt" href="skrypt.js">
+    <script src="script.js"></script>
+    <title>WorkTrips</title>
+</head>
+
+<body>
+
+    <h1>[mikoWHY]</h1>
+    <h2>Mikołaj Radka Porftofilo</h2>
+
+    <h3>  
+        <p1><a href="../index.html">Home</a></p1> <p2><a href="../About.html">About</a></p2>
+        <p3><a href="../Contact.html">Contact</a></p3>
+
+    </h3>
+        <table>
+            <td><img src="Grafiki/3/worktrpis_logo-400h.png">
+                <img src="Grafiki/3/Zrzut ekranu 2023-07-21 231722.png">
+                <img src="Grafiki/3/Obszar roboczy 1@4x.png">
+
+    
+            <td id="tb2">
+            <p id="Nazwa">WorkTrips</p>   
+            <p>Brałem aktywny udział w procesie rebrandingu firmy Hoteliors, która zdecydowała się na zmianę nazwy na WorkTrips, aby lepiej wpasować się w wymagania i oczekiwania międzynarodowego rynku. Jako członek zespołu, miałem okazję współtworzyć nową tożsamość wizualną firmy, w tym projektować logo, dobierać odpowiednią kolorystykę i opracowywać nowe materiały marketingowe. Wdrożenie nowej marki pozwoliło nam skutecznie zwiększyć zasięg naszej działalności na arenie międzynarodowej oraz budować bardziej spójny i rozpoznawalny wizerunek, co wpłynęło na nasz sukces na globalnym rynku.
+            </p>
+            <p>W ramach procesu rebrandingu w firmie WorkTrips, miałem również przyjemność zaprojektować i wdrożyć preloader na stronie internetowej. Preloader jest animowanym elementem,</p>  
+        </td>
+        </table>
+
+        <script>
+            window.onload = function() {
+                var backToTopButton = document.getElementById('back-to-top');
+    
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 100) {
+                        backToTopButton.style.display = 'block';
+                        backToTopButton.style.opacity = '1';
+                    } else {
+                        backToTopButton.style.opacity = '0';
+                        setTimeout(function() {
+                            backToTopButton.style.display = 'none';
+                        }, 300);
+                    }
+                });
+    
+                backToTopButton.addEventListener('click', function() {
+                    scrollToTop();
+                });
+    
+                function scrollToTop() {
+                    if (window.scrollY !== 0) {
+                        window.requestAnimationFrame(scrollToTop);
+                        window.scrollTo(0, window.scrollY - window.scrollY / 8);
+                    }
+                }
+            };
+        </script>
+
+        <style>
+            td {
+              vertical-align: top;
+            }
+          </style>
+
+    <footer>
+        <p4>© Wszelkie prawa zastrzeżone</p4>
+        <p5 id="back-to-top">Back to top</p5>
+    </footer>
+</body>
