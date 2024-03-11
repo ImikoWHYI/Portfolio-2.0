@@ -3,7 +3,31 @@ body{
     color:rgb(255, 255, 255);
     font-family: Lato;
     margin: 0px;
+    
 }
+
+
+/* Styl galerii */
+#gallery {
+    display: grid;
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+#gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+    table td {
+        width: 50%; /* Dwie kolumny na smartfonie */
+    }
+}
+
 
 table {
     margin-top: 200px;
@@ -131,3 +155,6 @@ a{
     width: 50px;
     height: 50px;
 }
+
+
+
