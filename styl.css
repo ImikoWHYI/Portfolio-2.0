@@ -14,32 +14,6 @@ table {
      background-color: rgb(20, 20, 20);
   }
 
- /* Styl galerii */
-#gallery {
-    display: grid;
-    grid-gap: 10px;
-    padding: 20px;
-}
-
-#gallery img {
-    max-width: 100%;
-    height: auto;
-}
-
-@media screen and (max-width: 600px) {
-    table {
-        width: 100%;
-    }
-    table td {
-        width: 50%; /* Dwie kolumny na smartfonie */
-    }
-}
-    
-  td {
-    height: 150px;
-    width: 150px;
-  }
-}
 
 
 img{
