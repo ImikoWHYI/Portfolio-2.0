@@ -1,3 +1,27 @@
+@media screen and (max-width:1000px){
+    
+        #tb8{
+            display: none;
+        }
+        #tb2{
+            display: none;
+        }
+
+        #tb{
+            display: none;
+        }
+
+        video{
+            width: 80%;
+        padding-left: 100px;
+        padding-bottom: 60px;
+        }
+
+
+}
+
+
+
 body{
     background-color: rgb(20, 20, 20);
     color:rgb(255, 255, 255);
@@ -27,38 +51,43 @@ h1{
     margin-bottom: 0px;
     }
 
-p1, p2, p3 {
-    display: inline;
-    margin-left: 20px;
-}
-h3{
-    text-align: center;
-    background-color: rgb(20, 20, 20);
-    color:rgb(155, 155, 155)
-}
+    p1, p2, p3 {
+        display: inline;
+        margin-left: 20px;
+    }
+    h3{
+        text-align: center;
+        background-color: rgb(20, 20, 20);
+        color:rgb(155, 155, 155)
+    }
+    
+    p3:hover{
+      text-shadow: 60px;
+      color: white;
+      cursor: pointer;
+    }
+    
+    p2:hover{
+        text-shadow: 60px;
+        color: white;
+        cursor: pointer;
+      }
+    
+    p1:hover{
+        text-shadow: 60px;
+        color: white;
+        cursor: pointer;
+    }
 
-p3:hover{
-  text-shadow: 60px;
-  color: white;
-  cursor: pointer;
-}
-
-p2:hover{
-    text-shadow: 60px;
-    color: white;
-    cursor: pointer;
-  }
-
-p1:hover{
-    text-shadow: 60px;
-    color: white;
-    cursor: pointer;
-}
 
 table {
-    margin-top: 200px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 65%;
+
+
+    margin-top: 200px;
     border-spacing: 30px;
      background-color: rgb(20 ,20,20);
   }
@@ -85,9 +114,7 @@ td{
     padding-top: 0;
 }
 
-#img{
-    width: 5%;
-}
+
 
 
 footer {
@@ -112,8 +139,7 @@ footer p4 {
 footer p5 {
     margin: 0;
     margin-right: 70px;
-    color:rgb(191, 191, 191);
-}
+    color:rgb(191, 191, 191);}
 
 
 p5:hover{
@@ -155,4 +181,15 @@ th{
 
 #tektsabout{
     font-size: large; 
+}
+
+
+
+#rysunki2{
+    width: 200px;
+}
+
+#foto-manipulacja{
+
+    width: 200px;
 }
